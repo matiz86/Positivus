@@ -1,0 +1,65 @@
+.header {
+  padding-top: 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  &__menu-item {
+  }
+
+  &__button {
+  }
+
+  &__burger-button {
+  }
+}
+.container {
+}
+.logo {
+  &__image {
+  }
+}
+.neader {
+  &__menu-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+
+    @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50%;
+      width: 0;
+      height: 2px;
+      background-color: currentColor;
+      transition-duration: inherit;
+    }
+  }
+}
