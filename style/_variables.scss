@@ -24,4 +24,12 @@
   --button-height: 68px;
 
   --transition-duration: 0.2s;
+
+  @include desktop {
+    --section-offset: 50px 0;
+  }
+
+  @include mobile {
+    --section-offset: 30px 0;
+  }
 }
